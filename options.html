@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Authentiq 2FA extension options</title>
+    <meta charset="utf-8"/>
+    
+    <style>
+      body {
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+        font-size: 1.06rem;
+        /* max-width: 300px; */
+        margin: 20px;
+        color: #262626;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+        font-weight: 500;
+      }
+
+      .logo {
+        /* display: block; */
+        margin-bottom: 20px;
+      }
+
+      input,
+      button {
+        float: left;
+        margin: 0 0 10px;
+        padding: 6px 2%;
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+      }
+
+      input {
+        width: 76%;
+      }
+
+      button {
+        width: 14%;
+        margin-left: 2%;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        color: #fff;
+        background-color: #895fc0;
+        border: 1px solid #895fc0;
+        text-align: center;
+      }
+
+      button:hover {
+        color: #fff;
+        background-color: #6f43a9;
+        border-color: #6a40a2;
+      }
+
+      hr {
+        clear: both;
+      }
+
+      .note, .note img {
+        vertical-align: top;
+        font-size: 0.9em;
+      }
+
+      #success-message {
+        color: green;
+        font-size: .8rem;
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="images/logo.svg" width="209" height="50" class="logo" />
+    
+    <h1>Extension settings</h1>
+    <p>Enter an e-mail address or phone number registered to your Authentiq ID</p>
+    
+    <div>
+      <input type="text" id="handle" placeholder="enter your handle" />
+      <button id="save">Save</button>
+    </div>
+
+    <hr />
+
+    <p class="note">
+      Whenever you click on the <img src="images/authentiq-16.png" width="16" height="16" /> icon in the browser bar, the appropriate 2FA codes will show on your Authentiq ID app.
+    </p>
+
+    <p id="success-message" class="hidden">Your new handle has been saved!</p>
+  </body>
+  <script src="options.js"></script>
+</html>
