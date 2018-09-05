@@ -1,7 +1,7 @@
 {
-  "name": "Authentiq TOTP",
-  "description": "Nudge your Authentiq ID app to display the TOTP for this site",
-  "version": "0.1",
+  "name": "Authentiq 2FA",
+  "description": "Nudge your Authentiq ID app (iOS, Android) to display the 2FA code for the current site",
+  "version": "0.2",
   "author": "The Authentiq team",
 
   "options_ui": {
